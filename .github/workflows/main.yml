@@ -4,5 +4,5 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ url }}
+      - run: echo ${{ deploymenturl }}
       - run: echo 'test'
