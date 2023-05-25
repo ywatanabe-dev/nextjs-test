@@ -4,5 +4,5 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ input.url }}
+      - run: echo ${{ url }}
       - run: echo 'test'
