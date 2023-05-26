@@ -6,3 +6,6 @@ jobs:
     steps:
       - run: echo ${{ github.event.deployment_status.target_url }}
       - run: echo 'test'
+      - name: Dump GitHub context
+        id: github_context_step
+        run: echo '${{ toJSON(github) }}'
