@@ -6,6 +6,7 @@ export const config = {
 export default () =>
   new Response("Hello world!", {
     headers: {
+      "Content-Type": "multipart/x-mixed-replace",
       "Transfer-Encoding": "chunked",
     },
   });
