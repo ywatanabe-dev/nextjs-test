@@ -3,4 +3,9 @@ export const config = {
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => new Response("Hello world!");
+export default () =>
+  new Response("Hello world!", {
+    headers: {
+      "Transfer-Encoding": "chunked",
+    },
+  });
